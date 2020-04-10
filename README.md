@@ -1,3 +1,3 @@
 # eshop
-Criando Loja Virtual em PHP
+Loja Virtual em PHP
 

@@ -5,8 +5,13 @@
 <meta name="viewport" content="widt"
 
 <head>
-    <title>Projeto Eshop</title>
+    <title>Projeto Eshop PHP</title>
 </head>
+
+<?php 
+
+
+?>
 
 <body>
 

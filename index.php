@@ -1,20 +1,11 @@
-<!doctype html>
-<html lang="en">
+<?php
 
-<meta charset="utf-8">
-<meta name="viewport" content="widt"
+require "./lib/autoload.php";
 
-<head>
-    <title>Projeto Eshop PHP</title>
-</head>
-
-<?php 
+$smarty = new Template();
 
 
-?>
+//valores para o template
+$smarty->assign('NOME', 'ANANSI');
 
-<body>
-
-</body>
-
-</html>
+$smarty->display('index.tpl');

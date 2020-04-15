@@ -1,16 +1,26 @@
 <?php
 
-class Rotas
+Class Rotas
 {
+    public static $pag;
 
     static function get_Pagina()
     {
         if (isset($_GET['pag'])) {
-            $pagina = 'controller/' .$_GET['pag'];
-            if (file_exists($pagina)) { 
+
+            $pagina = $_GET['pag'];
+
+            self::$pag = explode('/', $pagina);
+            echo '<pre>';
+            var_dump(self::$pag);
+            echo '</pre>';
+
+            $pagina = 'controller/' . $_GET['pag'] . '.php';
+            //$pagina = 'controller/' . $_GET['pag'] . '.php';
+            if (file_exists($pagina)) {
                 include $pagina;
             } else {
-                include 'erro.php';
+                include 'error.php';
             }
         }
     }

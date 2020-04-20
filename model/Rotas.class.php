@@ -11,11 +11,12 @@ Class Rotas
             $pagina = $_GET['pag'];
 
             self::$pag = explode('/', $pagina);
-            echo '<pre>';
-            var_dump(self::$pag);
-            echo '</pre>';
+            
+            //echo '<pre>';
+            //var_dump(self::$pag);
+            //echo '</pre>';
 
-            $pagina = 'controller/' . $_GET['pag'] . '.php';
+            $pagina = 'controller/' .self::$pag[0] . '.php';
             //$pagina = 'controller/' . $_GET['pag'] . '.php';
             if (file_exists($pagina)) {
                 include $pagina;

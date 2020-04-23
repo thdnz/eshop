@@ -4,7 +4,7 @@ Class Config(){
 
 //Informacoes Basicas do Site
 const SITE_URL = "http://localhost";
-const SITE_PASTA = "ESHO";
+const SITE_PASTA = "ESHOP";
 const SITE_NOME = "ESHOP - PHP 7 e Mysqli";
 const SITE_EMAIL_ADM = "eshop@gmail.com";
 

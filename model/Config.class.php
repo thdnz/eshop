@@ -1,6 +1,6 @@
 <?php
 
-Class Config(){
+Class Config{
 
 //Informacoes Basicas do Site
 const SITE_URL = "http://localhost";
@@ -12,7 +12,7 @@ const SITE_EMAIL_ADM = "eshop@gmail.com";
 const BD_HOST = "locashost",
       BD_USER = "root",
       BD_SENHA = "",
-      BD_BANCO = "eshop"
+      BD_BANCO = "eshop";
       
 
 

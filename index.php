@@ -8,7 +8,7 @@ Rotas::get_Pagina();
 //valores para o template
 $smarty->assign('NOME', 'ANANSI');
 
-echo Rotas::get_SiteRAIZ() . '<br>';
+echo Rotas::pag_Carrinho() . '<br>';
 
 $smarty->display('index.tpl');
 

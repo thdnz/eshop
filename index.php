@@ -8,7 +8,9 @@ Rotas::get_Pagina();
 //valores para o template
 $smarty->assign('NOME', 'ANANSI');
 
-echo Rotas::pag_Carrinho() . '<br>';
+$smarty->assign('GET_TEMA', Rotas::get_SiteTEMA());
+
+
 
 $smarty->display('index.tpl');
 

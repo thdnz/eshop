@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-05-06 00:14:33
+/* Smarty version 3.1.36, created on 2020-05-10 06:26:27
   from 'C:\xampp\htdocs\eshop\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5eb1e5497da418_85785018',
+  'unifunc' => 'content_5eb78273ec91c0_13986713',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5c691f9a2b3862d9e6591c342bdd0e56849584de' => 
     array (
       0 => 'C:\\xampp\\htdocs\\eshop\\index.tpl',
-      1 => 1588716657,
+      1 => 1589084785,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5eb1e5497da418_85785018 (Smarty_Internal_Template $_smarty_tpl) {
-?><!DOCTYPE html>
-<html lang="en">
+function content_5eb78273ec91c0_13986713 (Smarty_Internal_Template $_smarty_tpl) {
+?><!doctype html>
+<html lang="pt">
 
     <head>
 
@@ -41,6 +41,8 @@ function content_5eb1e5497da418_85785018 (Smarty_Internal_Template $_smarty_tpl)
 /vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
+
+
 
 
         
@@ -62,20 +64,19 @@ function content_5eb1e5497da418_85785018 (Smarty_Internal_Template $_smarty_tpl)
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['GET_HOME']->value;?>
-">Home
-                                <span class="sr-only">(current)</span>
-                            </a>
+">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['PAG_MINHACONTA']->value;?>
+">Minha Conta</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['GET_CARRINHO']->value;?>
-">Services</a>
+                            <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONTATO']->value;?>
+">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
+                            <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['PAG_CARRINHO']->value;?>
+">Carrinho</a> </li>
                     </ul>
                 </div>
             </div>
@@ -86,16 +87,6 @@ function content_5eb1e5497da418_85785018 (Smarty_Internal_Template $_smarty_tpl)
 
             <div class="row">
 
-                <div class="col-lg-3">
-
-                    <h1 class="my-4">Shop Name</h1>
-                    <div class="list-group">
-                        <a href="#" class="list-group-item">Category 1</a>
-                        <a href="#" class="list-group-item">Category 2</a>
-                        <a href="#" class="list-group-item">Category 3</a>
-                    </div>
-
-                </div>
                 <!-- /.col-lg-3 -->
 
                 <div class="col-lg-9">
@@ -127,131 +118,30 @@ function content_5eb1e5497da418_85785018 (Smarty_Internal_Template $_smarty_tpl)
                         </a>
                     </div>
 
-                    <div class="col-lg-9">
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div style="background: green">
-                                
-                                <?php                                 
-                                Rotas::get_Pagina();
-                                //var_dump(Rotas::$pag);    
-                                ?>
-
-                            </div>
-                        </div>
-
-                        <!-- /.row DIV MINHA -->
-                    </div>
 
 
-                    <div class="row">
 
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card h-100">
-                                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        <a href="#">Item One</a>
-                                    </h4>
-                                    <h5>$24.99</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card h-100">
-                                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        <a href="#">Item Two</a>
-                                    </h4>
-                                    <h5>$24.99</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card h-100">
-                                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        <a href="#">Item Three</a>
-                                    </h4>
-                                    <h5>$24.99</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card h-100">
-                                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        <a href="#">Item Four</a>
-                                    </h4>
-                                    <h5>$24.99</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card h-100">
-                                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        <a href="#">Item Five</a>
-                                    </h4>
-                                    <h5>$24.99</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card h-100">
-                                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        <a href="#">Item Six</a>
-                                    </h4>
-                                    <h5>$24.99</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- /.row -->
 
                 </div>
                 <!-- /.col-lg-9 -->
 
             </div>
             <!-- /.row -->
+            <div class="row">
+                <?php  
+                Rotas::get_Pagina();
+                //var_dump(Rotas::$pag);
+                ?>
+            </div>
 
         </div>
         <!-- /.container -->
+
+
+
+
+
 
         <!-- Footer -->
         <footer class="py-5 bg-dark">

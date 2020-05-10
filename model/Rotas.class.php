@@ -24,6 +24,16 @@ class Rotas
         return self::get_SiteHOME() . '/carrinho' ;
     }
 
+    static function pag_Contato()
+    {
+        return self::get_SiteHOME() . '/contato' ;
+    }
+
+    static function pag_Minhaconta()
+    {
+        return self::get_SiteHOME() . '/minhaconta' ;
+    }
+
     static function get_Pagina()
     {
         if (isset($_GET['pag'])) {

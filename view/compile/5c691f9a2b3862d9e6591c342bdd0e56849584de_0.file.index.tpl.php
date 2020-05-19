@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-05-10 06:26:27
+/* Smarty version 3.1.36, created on 2020-05-19 03:00:39
   from 'C:\xampp\htdocs\eshop\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5eb78273ec91c0_13986713',
+  'unifunc' => 'content_5ec32fb7cffac4_90250901',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5c691f9a2b3862d9e6591c342bdd0e56849584de' => 
     array (
       0 => 'C:\\xampp\\htdocs\\eshop\\index.tpl',
-      1 => 1589084785,
+      1 => 1589850032,
       2 => 'file',
     ),
   ),
@@ -20,32 +20,25 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5eb78273ec91c0_13986713 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ec32fb7cffac4_90250901 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="pt">
 
     <head>
-
+        <title><?php echo $_smarty_tpl->tpl_vars['TITULO_SITE']->value;?>
+</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Shop Homepage - Start Bootstrap Template</title>
-
         <!-- Bootstrap core CSS -->
 
-
-        
         <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
 
-
-
-
-        
         <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /css/shop-homepage.css" rel="stylesheet">
 
@@ -64,7 +57,9 @@ function content_5eb78273ec91c0_13986713 (Smarty_Internal_Template $_smarty_tpl)
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['GET_HOME']->value;?>
-">Home</a>
+">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['PAG_MINHACONTA']->value;?>
@@ -129,7 +124,7 @@ function content_5eb78273ec91c0_13986713 (Smarty_Internal_Template $_smarty_tpl)
             </div>
             <!-- /.row -->
             <div class="row">
-                <?php  
+                <?php 
                 Rotas::get_Pagina();
                 //var_dump(Rotas::$pag);
                 ?>

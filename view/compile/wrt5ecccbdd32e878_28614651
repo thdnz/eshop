@@ -1,8 +1,32 @@
-<!doctype html>
+<?php
+/* Smarty version 3.1.36, created on 2020-05-26 09:57:17
+  from 'C:\xampp\htdocs\eshop\index.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.36',
+  'unifunc' => 'content_5ecccbdd2a0867_47082405',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '5c691f9a2b3862d9e6591c342bdd0e56849584de' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\eshop\\index.tpl',
+      1 => 1590479828,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5ecccbdd2a0867_47082405 (Smarty_Internal_Template $_smarty_tpl) {
+?><!doctype html>
 <html lang="pt">
 
     <head>
-        <title>{$TITULO_SITE}</title>
+        <title><?php echo $_smarty_tpl->tpl_vars['TITULO_SITE']->value;?>
+</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
@@ -10,11 +34,13 @@
 
         <!-- Bootstrap core CSS -->
 
-        <link href="{$GET_TEMA}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
 
-        <link href="{$GET_TEMA}/css/shop-homepage.css" rel="stylesheet">
+        <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/css/shop-homepage.css" rel="stylesheet">
 
     </head>
 
@@ -30,18 +56,22 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="{$GET_HOME}">Home
+                            <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['GET_HOME']->value;?>
+">Home
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{$PAG_MINHACONTA}">Minha Conta</a>
+                            <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['PAG_MINHACONTA']->value;?>
+">Minha Conta</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{$PAG_CONTATO}">Contato</a>
+                            <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONTATO']->value;?>
+">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{$PAG_CARRINHO}">Carrinho</a> </li>
+                            <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['PAG_CARRINHO']->value;?>
+">Carrinho</a> </li>
                     </ul>
                 </div>
             </div>
@@ -94,10 +124,10 @@
             </div>
             <!-- /.row -->
             <div class="row">
-                {php}
+                <?php 
                 Rotas::get_Pagina();
                 //var_dump(Rotas::$pag);
-                {/php}
+                ?>
             </div>
 
         </div>
@@ -109,8 +139,13 @@
 
 
         <!-- Footer -->
-        
-        <footer class="py-5 bg-dark fixed-bottom">
+        footer{
+width: 100%;
+height: 50px;
+margin: auto;
+bottom: 0;
+}
+        <footer class="py-5 bg-dark">
             <div class="container">
                 <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
             </div>
@@ -118,9 +153,16 @@
         </footer>
 
         <!-- Bootstrap core JavaScript -->
-        <script src="{$GET_TEMA}/vendor/jquery/jquery.min.js"></script>
-        <script src="{$GET_TEMA}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/vendor/jquery/jquery.min.js"><?php echo '</script'; ?>
+>
+        <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/vendor/bootstrap/js/bootstrap.bundle.min.js"><?php echo '</script'; ?>
+>
 
     </body>
 
-</html>
+</html><?php }
+}

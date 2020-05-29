@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-05-10 06:43:19
+/* Smarty version 3.1.36, created on 2020-05-26 10:43:58
   from 'C:\xampp\htdocs\eshop\view\contato.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5eb78667700524_37934358',
+  'unifunc' => 'content_5eccd6ce886d02_05416802',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '30dcc867d5e8801f655165a89e8a05757283ba65' => 
     array (
       0 => 'C:\\xampp\\htdocs\\eshop\\view\\contato.tpl',
-      1 => 1589085796,
+      1 => 1590482635,
       2 => 'file',
     ),
   ),
@@ -20,12 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5eb78667700524_37934358 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5eccd6ce886d02_05416802 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt">
 
     <head>
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <?php echo '<script'; ?>
  src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"><?php echo '</script'; ?>
 >
@@ -51,7 +50,7 @@ function content_5eb78667700524_37934358 (Smarty_Internal_Template $_smarty_tpl)
                                                 <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input id="fullName" name="fullName" placeholder="Full Name" class="form-control" required="true" value="" type="text"></div>
                                             </div>
                                         </div>
-                                       
+
                                         <div class="form-group">
                                             <label class="col-md-4 control-label">Email</label>
                                             <div class="col-md-8 inputGroupContainer">
@@ -62,14 +61,22 @@ function content_5eb78667700524_37934358 (Smarty_Internal_Template $_smarty_tpl)
                                             <label class="col-md-4 control-label">Phone Number</label>
                                             <div class="col-md-8 inputGroupContainer">
                                                 <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input id="phoneNumber" name="phoneNumber" placeholder="Phone Number" class="form-control" required="true" value="" type="text"></div>
+
                                             </div>
+                                            <br />
+
                                         </div>
+
                                     </fieldset>
                                 </form>
                             </td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
+            <div class="form-group">
+                <button class="col-md-3 control-label " type="submit">Enviar</button>
+                <button class="col-md-3 control-label" type="submit">Limpar</button>
             </div>
         </div>
 

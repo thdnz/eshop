@@ -37,6 +37,9 @@ private function Conectar(){
         return $this->obj->fetch(PDO::FETCH_ASSOC);
     }
 
+    function TotalDados(){
+        return $this->obj->rowCount();
+    }
 
 
 }

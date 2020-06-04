@@ -15,12 +15,9 @@ $smarty->assign('TITULO_SITE', Config::SITE_NOME);
 
 $dados = new Conexao();
 $sql = "SELECT * FROM categorias";
-$dados->ExecuteSQL($sql); 
-$lista = $dados->ListarDados(); 
-   
-echo '<pre>';
-var_dump($lista);
-echo '</pre>';
+echo $dados->ExecuteSQL($sql); 
+
+  $dados->TotalDados();    
 
 
 $smarty->display('index.tpl');

@@ -15,7 +15,7 @@
                     <tbody>
                         <tr>
                             <td colspan="1">
-                                <form class="well form-horizontal" action="eshop/envio.php">
+                                <form class="well form-horizontal" action="envio.php">
                                     <fieldset>
                                         <div class="form-group">
                                             <label class="col-md-4 control-label">Full Name</label>

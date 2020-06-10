@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-06-04 06:36:36
+/* Smarty version 3.1.36, created on 2020-06-10 20:49:55
   from 'C:\xampp\htdocs\eshop\view\contato.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5ed87a544b0aa1_03690222',
+  'unifunc' => 'content_5ee12b532fb394_19796679',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '30dcc867d5e8801f655165a89e8a05757283ba65' => 
     array (
       0 => 'C:\\xampp\\htdocs\\eshop\\view\\contato.tpl',
-      1 => 1591245391,
+      1 => 1591767508,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ed87a544b0aa1_03690222 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee12b532fb394_19796679 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt">
 
@@ -42,7 +42,7 @@ function content_5ed87a544b0aa1_03690222 (Smarty_Internal_Template $_smarty_tpl)
                     <tbody>
                         <tr>
                             <td colspan="1">
-                                <form class="well form-horizontal" action="envio">
+                                <form class="well form-horizontal" action="envio.php">
                                     <fieldset>
                                         <div class="form-group">
                                             <label class="col-md-4 control-label">Full Name</label>

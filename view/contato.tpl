@@ -15,7 +15,7 @@
                     <tbody>
                         <tr>
                             <td colspan="1">
-                                <form class="well form-horizontal">
+                                <form class="well form-horizontal" action="eshop/envio.php">
                                     <fieldset>
                                         <div class="form-group">
                                             <label class="col-md-4 control-label">Full Name</label>
@@ -31,15 +31,18 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-md-4 control-label">Phone Number</label>
+                                            <label class="col-md-4 control-label">Mensagem</label>
                                             <div class="col-md-8 inputGroupContainer">
-                                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input id="phoneNumber" name="phoneNumber" placeholder="Phone Number" class="form-control" required="true" value="" type="text"></div>
+                                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input id="phoneNumber" name="mensagem" placeholder="Mensagem" class="form-control" required="true" value="" type="text"></div>
 
                                             </div>
                                             <br />
 
                                         </div>
-
+                                        <div class="form-group">
+                                        <button class="col-md-3 control-label " type="submit">Enviar</button>
+                                        <button class="col-md-3 control-label" type="submit">Limpar</button>
+                                    </div>
                                     </fieldset>
                                 </form>
                             </td>
@@ -47,10 +50,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="form-group">
-                <button class="col-md-3 control-label " type="submit">Enviar</button>
-                <button class="col-md-3 control-label" type="submit">Limpar</button>
-            </div>
+           
         </div>
 
     </body>

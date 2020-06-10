@@ -41,6 +41,10 @@ private function Conectar(){
         return $this->obj->rowCount();
     }
 
+    function GetItens(){
+        //return $this->obj->itens;
+    }
+
 
 }
 ?>

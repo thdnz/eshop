@@ -13,11 +13,6 @@ $smarty->assign('PAG_CONTATO', Rotas::pag_Contato());
 $smarty->assign('PAG_MINHACONTA', Rotas::pag_Minhaconta());
 $smarty->assign('TITULO_SITE', Config::SITE_NOME);
 
-$dados = new Conexao();
-$sql = "SELECT * FROM categorias";
-echo $dados->ExecuteSQL($sql); 
-
-  $dados->TotalDados();    
 
 
 $smarty->display('index.tpl');

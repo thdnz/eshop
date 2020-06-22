@@ -23,7 +23,7 @@ Class Produtos extends Conexao{
         while($lista = $this->ListarDados()):
         $this->itens[$i] = array(
             'prod_id' => $lista['pro_id'],
-            'prod_nome' => $lista['prod_nome'],
+            'prod_nome' => $lista['pro_nome'],
             'prod_desc' => $lista['pro_desc'],
             'prod_peso' => $lista['pro_peso'],
             'prod_valor' => $lista['pro_valor'],

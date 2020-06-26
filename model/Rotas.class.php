@@ -34,6 +34,20 @@ class Rotas
         return self::get_SiteHOME() . '/minhaconta' ;
     }
 
+    static function get_ImagePasta(){
+        return 'media/images/';
+    }
+
+    static function get_ImageURL(){
+        return self::get_SiteHOME() . '/' . get_ImagePasta();
+       
+    }
+
+    static function ImageLink($img, $largura, $altura){
+        $imagem = self::get_ImageURL() . "thumb.php?src={$img} $w={$largura}&h={$altura}&zc=1";
+       
+    }
+
     static function get_Pagina()
     {
         if (isset($_GET['pag'])) {

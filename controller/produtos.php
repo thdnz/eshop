@@ -5,7 +5,8 @@ $smarty = new Template();
 $produtos = new Produtos();
 $produtos->GetProdutos();
 
-echo '<pre>';
-var_dump($produtos->GetItens());
-echo '</pre>';
+$smarty->assign('PRO', $produtos->GetItens());
+$smarty->display('produtos.tpl');
+ 
+
 

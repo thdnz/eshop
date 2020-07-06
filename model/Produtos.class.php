@@ -1,4 +1,4 @@
-<?php
+<?php 
 class Produtos extends Conexao
 {
     function __construct()
@@ -12,7 +12,21 @@ class Produtos extends Conexao
     INNER JOIN  {$this->prefix}categorias c ON p.pro_categoria
     = c.cate_id";
 
-        //$query .= "ORDER BY pro_id DESC";
+        $query .= " ORDER BY pro_id DESC";
+
+        $this->ExecuteSQL($query);
+
+        $this->GetLista();
+    }
+
+    function GetProdutosID($id)
+    {
+        //query para buscar produtos de uma categoria especifica
+        $query = "SELECT * FROM {$this->prefix}produtos p 
+    INNER JOIN  {$this->prefix}categorias c ON p.pro_categoria
+    = c.cate_id";
+
+    $query .= " AND pro_id = {$id}";
 
         $this->ExecuteSQL($query);
 
@@ -34,6 +48,7 @@ class Produtos extends Conexao
                 'pro_comprimento' => $lista['pro_comprimento'],
                 'pro_img' => Rotas::ImageLink($lista['pro_img'], 180, 180),
                 'pro_slug' => $lista['pro_slug'],
+                'pro_ref' => $lista['pro_ref'],
                 'cate_nome' => $lista['cate_nome'],
                 'cate_id' => $lista['cate_id']
             );

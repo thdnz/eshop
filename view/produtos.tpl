@@ -11,8 +11,7 @@
     
                     <div class="thumbnail">
     
-                        <a href="
-                        {$PRO_INFO}/{$P.pro_id}/{$P.pro_slug}">
+                        <a href="{$PRO_INFO}/{$P.pro_id}/{$P.pro_slug}">
     
                             <img src="{$P.pro_img}" width="200" height="200" alt="">
     
